@@ -20,6 +20,7 @@ import java.util.Collection;
         }
         @GetMapping("/findAll2")
         public Collection<Student> findAll2(){
+            System.out.println("111");
             return
                     restTemplate.getForObject("http://localhost:8010/student/findAll",Collection.class);
         }
